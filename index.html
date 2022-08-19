@@ -287,6 +287,10 @@ img.zoom {
     .rodotrem_basculante{
       top:1px!important;
     }
+	
+	.bg-cover{
+	content:url("images/home-bg-mb.jpg");
+	}
   }
 
 
@@ -340,7 +344,7 @@ img.zoom {
     </header>-->
     <div class="intro-section home-section" id="home-section">
       <div id="bg">
-        <img src="images/home-bg3.jpg" alt="">
+        <img src="images/home-bg3.jpg" alt="" class="bg-cover">
       </div>
       <div class="container">
         <div class="row align-items-center">
@@ -412,7 +416,7 @@ img.zoom {
         <div class="row justify-content-center text-center mb-5">
           <div class="col-md-8 section-heading">
             <!--<span class="subheading">Stay Healthy</span>-->
-            <h2 class="heading mb-3" data-aos="fade-down" data-aos-delay="200">EVOLUÇÃO DO SEU IMPLEMENTO BASCULANTE</h2>
+            <h2 class="heading mb-3" data-aos="fade-down" data-aos-delay="200">A EVOLUÇÃO DO SEU IMPLEMENTO BASCULANTE</h2>
               <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, mollitia amet nihil!
             Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>-->
           </div>
@@ -441,7 +445,7 @@ img.zoom {
             <div class="ftco-feature-1">
               <span class="icon icon-gear"></span>
               <div class="ftco-feature-1-text">
-                <h2>LANTERNAS COM PISCAS SEQUENCIAL</h2>
+                <h2>LANTERNAS COM PISCA SEQUENCIAL</h2>
                 <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur tempora delectus aut, mollitia. Veritatis!</p>-->
               </div>
             </div>
@@ -554,39 +558,39 @@ img.zoom {
 
         <div class="row justify-content-center">
           <div class="col-md-7">
-            <form method="post" data-aos="fade" data-aos-delay="200">
+            <form method="post" action="http://metalesp.com.br/basculanteEmail" data-aos="fade" data-aos-delay="200">
               <div class="form-group row">
                 <div class="col-md-6 mb-3 mb-lg-0">
-                  <input type="text" class="form-control" placeholder="Nome">
+                  <input type="text" class="form-control" placeholder="Nome" name="name">
                 </div>
                 <div class="col-md-6">
-                  <input type="email" class="form-control" placeholder="Email">
+                  <input type="email" class="form-control" placeholder="Email" name="email">
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-4 mb-3 mb-lg-0">
-                  <input type="text" class="form-control" placeholder="Telefone">
+                  <input type="text" class="form-control" placeholder="Telefone" name="phone">
                 </div>
                 <div class="col-md-4">
-                  <input type="text" class="form-control" placeholder="Estado">
+                  <input type="text" class="form-control" placeholder="Estado" name="state">
                 </div>
                 <div class="col-md-4">
-                  <input type="texttext" class="form-control" placeholder="Cidade">
+                  <input type="texttext" class="form-control" placeholder="Cidade" name="city"> 
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-12">
                   <textarea class="form-control" id="" cols="30" rows="10"
-                    placeholder="Mensagem..."></textarea>
+                    placeholder="Mensagem..." name="message"></textarea>
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-6">
 
-                  <input type="submit" class="btn btn-primary py-3 px-5 btn-block" value="Confirmar">
+                  <input type="submit" class="btn btn-primary py-3 px-5 btn-block" value="Confirmar" onclick="clicked(event)">
                 </div>
               </div>
 
@@ -690,6 +694,16 @@ img.zoom {
     <!--<script src="js/jquery.mb.YTPlayer.min.js"></script>-->
 
   <script src="js/main.js"></script>
+
+	<script>
+	function clicked(e)
+	{
+		/*if(!confirm('Are you sure?')) {
+			e.preventDefault();
+		}*/
+		alert("Mensagem enviada com sucesso!");
+	}
+	</script>
 
   <script>
     $(document).ready(function(){
